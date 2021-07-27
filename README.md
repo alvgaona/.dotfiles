@@ -8,9 +8,9 @@ It also includes a bunch of plugins in order to make VIM much more useable.
 Follow these steps to have this configuration up and running in a few minutes:
 
 1. Install `neovim`.
-2. Install `rg` searcher.
+2. Install `rg` or `ag` searcher.
 3. Clone this repository in your filesystem.
-4. Copy (recursively) the `.vim/` and `.config/` to your `$HOME`.
+4. Copy (recursively) the `.vim/` and `.config/` to your `$HOME`, as well as the `.vimrc` file.
 5. Run NeoVim and execute the `:PlugInstall` command to install all the defined plugins.
 
 ## Plugin Manager
