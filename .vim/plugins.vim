@@ -19,7 +19,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdtree-project-plugin'
+"Plug 'scrooloose/nerdtree-project-plugin'
 
 " tmux
 Plug 'benmills/vimux'
@@ -31,9 +31,18 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " IDE
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'preservim/nerdcommenter'
+
 
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
+
+" Programming
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'MaxMellon/vim-jsx-pretty'
 
 call plug#end()
