@@ -3,7 +3,10 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
 lua <<EOF
 require('nvim-lsp-installer').setup {}
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.clangd.setup{}
 EOF
+
 
 lua <<EOF
 require('lualine').setup {
