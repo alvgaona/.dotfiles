@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -118,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  neotest = {
+    loaded = true,
+    path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/rcarriga/neotest"
   },
   nerdcommenter = {
     loaded = true,
@@ -213,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/Users/alvaro/.local/share/nvim/site/pack/packer/start/vimspector",
+    url = "https://github.com/puremourning/vimspector"
   }
 }
 
