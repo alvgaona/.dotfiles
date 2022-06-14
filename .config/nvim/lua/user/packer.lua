@@ -82,4 +82,8 @@ require('packer').startup(function()
   use { 'ellisonleao/glow.nvim', branch = 'main' }
 
   use 'puremourning/vimspector'
+
+  use 'RRethy/vim-illuminate'
+
+  use 'karb94/neoscroll.nvim'
 end)

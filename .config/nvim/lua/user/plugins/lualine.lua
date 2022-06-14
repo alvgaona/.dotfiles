@@ -2,7 +2,7 @@ local ok, lualine = pcall(require, 'lualine')
 
 if (not ok) then return end
 
-require('lualine').setup {
+lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'powerline',

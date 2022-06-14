@@ -18,35 +18,35 @@ nvimtree.setup {
     reload_on_bufenter = false,
     respect_buf_cwd = false,
     view = {
-    adaptive_size = false,
-    width = 30,
-    height = 30,
-    hide_root_folder = false,
-    side = "left",
-    preserve_window_proportions = false,
-    number = false,
-    relativenumber = false,
-    signcolumn = "yes",
-    mappings = {
-      custom_only = false,
-      list = {
-        -- user mappings go here
-      },
-    },
+    	adaptive_size = false,
+   	 width = 30,
+    	height = 30,
+    	hide_root_folder = false,
+    	side = 'right',
+    	preserve_window_proportions = false,
+    	number = false,
+    	relativenumber = false,
+    	signcolumn = "yes",
+    	mappings = {
+      		custom_only = false,
+      		list = {
+        	-- user mappings go here
+      		},
+    	},
     },
     renderer = {
-    add_trailing = false,
-    group_empty = false,
-    highlight_git = false,
-    highlight_opened_files = "none",
-    root_folder_modifier = ":~",
-    indent_markers = {
-      enable = false,
-      icons = {
-        corner = "└ ",
-        edge = "│ ",
-        none = "  ",
-      },
+    	add_trailing = false,
+    	group_empty = false,
+    	highlight_git = false,
+    	highlight_opened_files = "none",
+    	root_folder_modifier = ":~",
+    	indent_markers = {
+      	enable = false,
+      	icons = {
+       		corner = "└ ",
+        	edge = "│ ",
+        	none = "  ",
+      	},
     },
     icons = {
       webdev_colors = true,
@@ -63,7 +63,7 @@ nvimtree.setup {
         default = "",
         symlink = "",
         folder = {
-          arrow_closed = "",
+        	arrow_closed = "",
           arrow_open = "",
           default = "",
           open = "",
@@ -100,14 +100,14 @@ nvimtree.setup {
     args = {},
     },
     diagnostics = {
-    enable = false,
-    show_on_dirs = false,
+    enable = true,
+    show_on_dirs = true,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-  error = "",
-},
+      	hint = "",
+      	info = "",
+      	warning = "",
+  	error = "",
+	},
   },
   filters = {
     dotfiles = false,

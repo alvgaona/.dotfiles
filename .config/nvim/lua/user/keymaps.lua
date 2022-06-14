@@ -34,8 +34,8 @@ vim.api.nvim_set_keymap('n', '<C-j>', '<C-W>h', { silent = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-W>l', { silent = true })
 
 -- barbar
-vim.api.nvim_set_keymap('n', '<C-[>', ':BufferPrevious<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-]>', ':BufferNext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-]>', ':BufferNext<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-[>', ':BufferPrevious<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-<>', ':BufferMovePrevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C->>', ':BufferMoveNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-c>', ':BufferClose<CR>', { noremap = true, silent = true })
@@ -48,4 +48,4 @@ vim.api.nvim_set_keymap('n', '<C-c>', ':BufferClose<CR>', { noremap = true, sile
 vim.api.nvim_set_keymap('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Space>bd', ':BufferOrderByDirectory<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Space>bl', ':BufferOrderByLanguage<CR>', { noremap = true, silent = true })
- vim.api.nvim_set_keymap('n', '<Space>bw', ':BufferOrderByWindowNumber<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Space>bw', ':BufferOrderByWindowNumber<CR>', { noremap = true, silent = true })

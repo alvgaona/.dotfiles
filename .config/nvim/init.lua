@@ -1,3 +1,12 @@
+require('user.packer')
+require('user.plugins.lsp_installer')
+require('user.plugins.lualine')
+require('user.plugins.lspconfig')
+require('user.plugins.nvimtree')
+require('user.plugins.barbar')
+require('user.plugins.cmp')
+require('user.keymaps')
+
 vim.wo.number = true
 vim.o.mouse = 'a'
 vim.wo.numberwidth = 1
@@ -35,14 +44,4 @@ vim.cmd('syntax on')
 vim.cmd('colorscheme NeoSolarized')
 
 vim.api.nvim_set_option('updatetime', 100)
-
-require('user.packer')
-require('user.plugins.lsp_installer')
-require('user.plugins.lspconfig')
-require('user.plugins.lualine')
-require('user.plugins.nvimtree')
-require('user.plugins.barbar')
-require('user.plugins.cmp')
-
-require('user.keymaps')
 
