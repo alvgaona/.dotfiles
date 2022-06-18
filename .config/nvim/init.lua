@@ -4,6 +4,7 @@ require('user.plugins.lualine')
 require('user.plugins.lspconfig')
 require('user.plugins.nvimtree')
 require('user.plugins.barbar')
+require('user.plugins.catppuccin')
 require('user.plugins.cmp')
 require('user.keymaps')
 
@@ -39,9 +40,7 @@ vim.o.splitright = true
 vim.o.cmdheight = 1
 vim.o.signcolumn = 'yes'
 
-vim.g.neosolarized_termtrans = 1
 vim.cmd('syntax on')
-vim.cmd('colorscheme NeoSolarized')
 
 vim.api.nvim_set_option('updatetime', 100)
 
