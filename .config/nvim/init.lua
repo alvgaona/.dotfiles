@@ -1,12 +1,13 @@
-require('user.packer')
-require('user.plugins.lsp_installer')
-require('user.plugins.lualine')
-require('user.plugins.lspconfig')
-require('user.plugins.nvimtree')
-require('user.plugins.barbar')
-require('user.plugins.catppuccin')
-require('user.plugins.cmp')
-require('user.keymaps')
+require 'user.packer'
+require 'user.plugins.lsp_installer'
+require 'user.plugins.lualine'
+require 'user.plugins.lspconfig'
+require 'user.plugins.nvimtree'
+require 'user.plugins.barbar'
+require 'user.plugins.catppuccin'
+require 'user.plugins.cmp'
+require 'user.plugins.gitsigns'
+require 'user.keymaps'
 
 vim.wo.number = true
 vim.o.mouse = 'a'
