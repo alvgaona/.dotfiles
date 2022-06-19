@@ -3,6 +3,8 @@ local use = require('packer').use
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 
+	use {'glepnir/dashboard-nvim'}
+
 	use 'kyazdani42/nvim-web-devicons'
 
 	use 'williamboman/nvim-lsp-installer'
@@ -31,7 +33,12 @@ require('packer').startup(function()
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use 'lukas-reineke/indent-blankline.nvim'
+	use {
+		'lukas-reineke/indent-blankline.nvim',
+		config = function()
+			require("indent_blankline").setup { filetype_exclude = { "dashboard" } }
+		end
+	}
 
 	use 'preservim/nerdcommenter'
 
