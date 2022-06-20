@@ -69,6 +69,18 @@ lspconfig.eslint.setup {
   on_attach = on_attach
 }
 
+lspconfig.gopls.setup {
+  on_attach = on_attach
+}
+
+lspconfig.html.setup {
+  on_attach = on_attach
+}
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach
+}
+
 --local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 --for type, icon in pairs(signs) do
   --local hl = "DiagnosticSign" .. type

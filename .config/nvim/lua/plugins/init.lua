@@ -88,16 +88,16 @@ require('packer').startup(function()
 	use 'L3MON4D3/LuaSnip'
 
 	use 'saadparwaiz1/cmp_luasnip'
-  
-  use 'nvim-neotest/neotest-vim-test'
 
-  use 'nvim-neotest/neotest-plenary'
+	use 'nvim-neotest/neotest-vim-test'
 
-  use 'nvim-neotest/neotest-python'
+	use 'nvim-neotest/neotest-plenary'
 
-  use 'nvim-neotest/neotest-go'
+	use 'nvim-neotest/neotest-python'
 
-  use 'haydenmeade/neotest-jest'
+	use 'nvim-neotest/neotest-go'
+
+	use 'haydenmeade/neotest-jest'
 
 	use {
 		'rcarriga/neotest',
@@ -116,8 +116,9 @@ require('packer').startup(function()
 	use 'karb94/neoscroll.nvim'
 
 	use 'kkoomen/vim-doge'
-end)
 
+	use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
+end)
 
 require 'barbar-config'
 require 'catppuccin-config'
@@ -128,9 +129,9 @@ require 'gitsigns-config'
 require 'nvim-lsp-installer-config'
 require 'lsp-config'
 require 'lualine-config'
-require 'neoscroll-config'
 require 'neotest-config'
+require 'neoscroll-config'
 require 'nvim-tree-config'
 require 'vimspector-config'
-
+require 'todo-comments-config'
 
