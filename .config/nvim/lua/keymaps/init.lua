@@ -1,15 +1,13 @@
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 
 -- nvim-tree
 keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true})
-keymap('n', '<leader>r', ':NvimTreeRefresh<CR>', { noremap = true, silent = true })
+keymap('n', '<Leader>r', ':NvimTreeRefresh<CR>', { noremap = true, silent = true })
 keymap('n', '<C-f>', ':NvimTreeFindFile<CR>', { noremap = true, silent = true})
 
 -- cursor
-keymap('i', '<C-A>', '<Home>', { noremap = true })
-keymap('i', '<C-E>', '<End>', { noremap = true })
-keymap('n', '<C-A>', '<Home>', { noremap = true })
-keymap('n', '<C-E>', '<End>', { noremap = true })
+keymap({'i', 'n', 'v'}, '<C-A>', '<Home>', { noremap = true, silent = true })
+keymap({'i', 'n', 'v'}, '<C-E>', '<End>', { noremap = true, silent = true })
 
 -- tmux navigator
 vim.g.tmux_navigator_no_mappings = 1
@@ -32,17 +30,17 @@ keymap('i', '<S-Up>', '<Esc>:m-2<CR>', { noremap = true })
 keymap('i', '<S-Down>', '<Esc>:m+<CR>', { noremap = true })
 
 -- splits
-keymap('n', '<C-i>', '<C-W>k', { silent = true })
-keymap('n', '<C-k>', '<C-W>j', { silent = true })
-keymap('n', '<C-j>', '<C-W>h', { silent = true })
+keymap('n', '<C-k>', '<C-W>k', { silent = true })
+keymap('n', '<C-j>', '<C-W>j', { silent = true })
+keymap('n', '<C-h>', '<C-W>h', { silent = true })
 keymap('n', '<C-l>', '<C-W>l', { silent = true })
 
 -- barbar
-keymap('n', '<C-.>', ':BufferNext<CR>', { noremap = true })
-keymap('n', '<C-,>', ':BufferPrevious<CR>', { noremap = true })
-keymap('n', '<C-<>', ':BufferMovePrevious<CR>', { noremap = true })
-keymap('n', '<C->>', ':BufferMoveNext<CR>', { noremap = true })
-keymap('n', '<C-c>', ':BufferClose<CR>', { noremap = true })
+keymap('n', '<A-.>', ':BufferNext<CR>', { noremap = true, silent = true  })
+keymap('n', '<A-,>', ':BufferPrevious<CR>', { noremap = true, silent = true  })
+keymap('n', '<A-<>', ':BufferMovePrevious<CR>', { noremap = true, silent = true })
+keymap('n', '<A->>', ':BufferMoveNext<CR>', { noremap = true, silent = true  })
+keymap('n', '<A-x>', ':BufferClose<CR>', { noremap = true, silent = true  })
 --keymap('n', '', ':BufferWipeout<CR>', { noremap = true, silent = true })
 --keymap('n', '', ':BufferCloseAllButCurrent<CR>', { noremap = true })
 --keymap('n', '', ':BufferCloseAllButPinned<CR>', { noremap = true, silent = true })
@@ -53,3 +51,14 @@ keymap('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', { noremap = true, sil
 keymap('n', '<Space>bd', ':BufferOrderByDirectory<CR>', { noremap = true, silent = true })
 keymap('n', '<Space>bl', ':BufferOrderByLanguage<CR>', { noremap = true, silent = true })
 keymap('n', '<Space>bw', ':BufferOrderByWindowNumber<CR>', { noremap = true, silent = true })
+
+-- vimspector
+keymap('n', '<A-d>', ':call vimspector#Launch()<CR>', { noremap = false, silent = true })
+keymap('n', '<A-b>', ':call vimspector#ToggleBreakpoint()<CR>', { noremap = false, silent = true })
+keymap('n', '<A-c>', ':call vimspector#Continue()<CR>', { noremap = false, silent = true   })
+keymap('n', '<A-Esc>', '<:call vimspector#Stop()<CR>', { noremap = false, silent = true })
+keymap('n', '<A-Down>', ':call vimspector#StepOver()<CR>', { noremap = false, silent = true })
+keymap('n', '<A-Right>', ':call vimspector#StepInto()<CR>', { noremap = false, silent = true  })
+keymap('n', '<A-Left>', ':call vimspector#StepOut()<CR>', { noremap = false, silent = true  })
+keymap('n', '<A-q>', ':call vimspector#Reset()<CR>', { noremap = false, silent = true })
+

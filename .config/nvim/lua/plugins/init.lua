@@ -3,7 +3,9 @@ local use = require('packer').use
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 
-	use {'glepnir/dashboard-nvim'}
+	use 'mechatroner/rainbow_csv'
+
+	use 'glepnir/dashboard-nvim'
 
 	use 'kyazdani42/nvim-web-devicons'
 
@@ -68,10 +70,10 @@ require('packer').startup(function()
 
 	use 'lewis6991/gitsigns.nvim'
 
-	use({
+	use {
 		'catppuccin/nvim',
 		as = 'catppuccin'
-	})
+	}
 
 	use 'hrsh7th/cmp-nvim-lsp'
 
@@ -86,6 +88,16 @@ require('packer').startup(function()
 	use 'L3MON4D3/LuaSnip'
 
 	use 'saadparwaiz1/cmp_luasnip'
+  
+  use 'nvim-neotest/neotest-vim-test'
+
+  use 'nvim-neotest/neotest-plenary'
+
+  use 'nvim-neotest/neotest-python'
+
+  use 'nvim-neotest/neotest-go'
+
+  use 'haydenmeade/neotest-jest'
 
 	use {
 		'rcarriga/neotest',
@@ -103,3 +115,19 @@ require('packer').startup(function()
 
 	use 'karb94/neoscroll.nvim'
 end)
+
+
+require 'barbar-config'
+require 'catppuccin-config'
+require 'cmp-config'
+require 'dashboard-config'
+require 'gitsigns-config'
+require 'lsp-config'
+require 'lualine-config'
+require 'neoscroll-config'
+require 'neotest-config'
+require 'nvim-lsp-installer-config'
+require 'nvim-tree-config'
+require 'vimspector-config'
+
+
