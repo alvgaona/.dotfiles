@@ -46,13 +46,14 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_set_keymap('n', '<a-o>', '<cmd>lua require"illuminate".toggle_pause()<cr>', {noremap=true})
 end
 
-
 lspconfig.clangd.setup {
   on_attach = on_attach,
 }
+
 lspconfig.pyright.setup {
   on_attach = on_attach,
 }
+
 lspconfig.sumneko_lua.setup {
   on_attach = on_attach,
   settings = {

@@ -114,6 +114,8 @@ require('packer').startup(function()
 	use 'RRethy/vim-illuminate'
 
 	use 'karb94/neoscroll.nvim'
+
+	use 'kkoomen/vim-doge'
 end)
 
 
@@ -121,12 +123,13 @@ require 'barbar-config'
 require 'catppuccin-config'
 require 'cmp-config'
 require 'dashboard-config'
+require 'vim-doge-config'
 require 'gitsigns-config'
+require 'nvim-lsp-installer-config'
 require 'lsp-config'
 require 'lualine-config'
 require 'neoscroll-config'
 require 'neotest-config'
-require 'nvim-lsp-installer-config'
 require 'nvim-tree-config'
 require 'vimspector-config'
 
