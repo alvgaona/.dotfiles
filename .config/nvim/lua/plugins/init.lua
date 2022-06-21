@@ -134,4 +134,5 @@ require 'neoscroll-config'
 require 'nvim-tree-config'
 require 'vimspector-config'
 require 'todo-comments-config'
+require 'indent-blankline-config'
 
