@@ -1,5 +1,5 @@
 local ok, gitsigns = pcall(require, 'gitsigns')
- 
+
 if (not ok) then return end
 
 local on_attach = function(bufnr)
@@ -50,7 +50,7 @@ gitsigns.setup {
     changedelete = { hl = 'GitSignsChange', text = '~', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
   },
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
-  numhl      = true, -- Toggle with `:Gitsigns toggle_numhl`
+  numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
   linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
   word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {

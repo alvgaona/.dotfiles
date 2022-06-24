@@ -118,6 +118,8 @@ require('packer').startup(function()
 	use 'kkoomen/vim-doge'
 
 	use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
+
+  use { 'akinsho/toggleterm.nvim', tag = 'v1.*' }
 end)
 
 require 'barbar-config'
@@ -135,4 +137,5 @@ require 'nvim-tree-config'
 require 'vimspector-config'
 require 'todo-comments-config'
 require 'indent-blankline-config'
+require 'toggleterm-config'
 
