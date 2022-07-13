@@ -123,7 +123,6 @@ require('packer').startup(function()
 end)
 
 require 'barbar-config'
-require 'catppuccin-config'
 require 'cmp-config'
 require 'dashboard-config'
 require 'vim-doge-config'
@@ -138,4 +137,4 @@ require 'vimspector-config'
 require 'todo-comments-config'
 require 'indent-blankline-config'
 require 'toggleterm-config'
-
+require 'catppuccin-config'
