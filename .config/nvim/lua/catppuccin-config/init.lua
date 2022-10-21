@@ -3,38 +3,39 @@ local ok, catppuccin = pcall(require, 'catppuccin')
 if (not ok) then return end
 
 --configure it (info at --> https://github.com/catppucin/nvim
-catppuccin.setup {
+catppuccin.setup({
+  compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
 	transparent_background = true,
 	term_colors = false,
 	styles = {
-		comments = "italic",
-		conditionals = "italic",
-		loops = "NONE",
-		functions = "NONE",
-		keywords = "NONE",
-		strings = "NONE",
-		variables = "NONE",
-		numbers = "NONE",
-		booleans = "NONE",
-		properties = "NONE",
-		types = "NONE",
-		operators = "NONE",
+		comments = { "italic" },
+		conditionals = { "italic" },
+		loops = {},
+		functions = {},
+		keywords = {},
+		strings = {},
+		variables = {},
+		numbers = {},
+		booleans = {},
+		properties = {},
+		types = {},
+		operators = {},
 	},
 	integrations = {
 		treesitter = true,
 		native_lsp = {
 			enabled = true,
 			virtual_text = {
-				errors = "italic",
-				hints = "italic",
-				warnings = "italic",
-				information = "italic",
+				errors = { "italic" },
+				hints = { "italic" },
+				warnings = { "italic" },
+				information = { "italic" },
 			},
 			underlines = {
-				errors = "underline",
-				hints = "underline",
-				warnings = "underline",
-				information = "underline",
+				errors = { "underline" },
+				hints = { "underline" },
+				warnings = { "underline" },
+				information = { "underline" },
 			},
 		},
 		lsp_trouble = false,
@@ -60,7 +61,7 @@ catppuccin.setup {
 		lightspeed = false,
 		ts_rainbow = true,
 	}
-}
+})
 
 vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 vim.cmd [[colorscheme catppuccin]]

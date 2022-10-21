@@ -19,8 +19,8 @@ nvimtree.setup {
     respect_buf_cwd = false,
     view = {
     	adaptive_size = false,
-   	 width = 30,
-    	height = 30,
+   	  width = 30,
+      --height = 30,
     	hide_root_folder = false,
     	side = 'right',
     	preserve_window_proportions = false,
@@ -86,22 +86,22 @@ nvimtree.setup {
     special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
     },
     hijack_directories = {
-    enable = true,
-    auto_open = true,
+      enable = true,
+      auto_open = true,
     },
     update_focused_file = {
-    enable = false,
-    update_cwd = false,
-    ignore_list = {},
+      enable = false,
+      update_cwd = false,
+      ignore_list = {},
     },
     ignore_ft_on_setup = {},
     system_open = {
-    cmd = "",
-    args = {},
+      cmd = "",
+      args = {},
     },
     diagnostics = {
-    enable = true,
-    show_on_dirs = true,
+      enable = true,
+      show_on_dirs = true,
     icons = {
       	hint = "",
       	info = "",

@@ -70,10 +70,10 @@ require('packer').startup(function()
 
 	use 'lewis6991/gitsigns.nvim'
 
-	use {
-		'catppuccin/nvim',
-		as = 'catppuccin'
-	}
+  use {
+    'catppuccin/nvim',
+    as = 'catppuccin'
+  }
 
 	use 'hrsh7th/cmp-nvim-lsp'
 
@@ -127,6 +127,7 @@ require 'cmp-config'
 require 'dashboard-config'
 require 'vim-doge-config'
 require 'gitsigns-config'
+require 'nvim-treesitteer-config'
 require 'nvim-lsp-installer-config'
 require 'lsp-config'
 require 'lualine-config'
@@ -138,3 +139,4 @@ require 'todo-comments-config'
 require 'indent-blankline-config'
 require 'toggleterm-config'
 require 'catppuccin-config'
+

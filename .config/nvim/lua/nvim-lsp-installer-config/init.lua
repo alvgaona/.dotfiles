@@ -5,7 +5,7 @@ if (not ok) then return end
 lsp_installer.setup {
     automatic_installation = true,
 
-    ensure_installed = { 'pyright', 'clangd', 'sumneko_lua', 'gopls', 'eslint', 'html' },
+    ensure_installed = { 'pyright', 'clangd', 'sumneko_lua', 'gopls', 'tsserver', 'html' },
 
     ui = {
         icons = {
