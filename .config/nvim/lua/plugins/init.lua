@@ -9,7 +9,9 @@ require('packer').startup(function()
 
 	use 'kyazdani42/nvim-web-devicons'
 
-	use 'williamboman/nvim-lsp-installer'
+	use 'williamboman/mason.nvim'
+
+  use 'williamboman/mason-lspconfig.nvim'
 
 	use 'neovim/nvim-lspconfig'
 
@@ -109,7 +111,7 @@ require('packer').startup(function()
 	}
 	use { 'ellisonleao/glow.nvim', branch = 'main' }
 
-	use 'puremourning/vimspector'
+--	use 'puremourning/vimspector'
 
 	use 'RRethy/vim-illuminate'
 
@@ -128,15 +130,15 @@ require 'dashboard-config'
 require 'vim-doge-config'
 require 'gitsigns-config'
 require 'nvim-treesitteer-config'
-require 'nvim-lsp-installer-config'
+require 'mason-config'
 require 'lsp-config'
 require 'lualine-config'
 require 'neotest-config'
 require 'neoscroll-config'
 require 'nvim-tree-config'
-require 'vimspector-config'
+-- require 'vimspector-config'
 require 'todo-comments-config'
 require 'indent-blankline-config'
-require 'toggleterm-config'
+-- require 'toggleterm-config'
 require 'catppuccin-config'
 

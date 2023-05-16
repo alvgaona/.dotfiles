@@ -1,5 +1,9 @@
+local ok, barbar = pcall(require, 'barbar.nvim')
+
+if (not ok) then return end
+
 -- Set barbar's options
-vim.g.bufferline = {
+barbar.setup {
   -- Enable/disable animations
   animation = true,
 
@@ -24,7 +28,7 @@ vim.g.bufferline = {
   -- Enable/disable icons
   -- if set to 'numbers', will show buffer index in the tabline
   -- if set to 'both', will show buffer index and icons in the tabline
-  icons = true,
+  icons = { filetype = { enabled = true } },
 
   -- If set, the icon color will follow its corresponding buffer
   -- highlight group. By default, the Buffer*Icon group is linked to the
